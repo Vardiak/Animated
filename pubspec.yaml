@@ -1,7 +1,7 @@
-name: animated
-description: A new Flutter package project.
-version: 0.0.1
-author:
+name: Animated
+description: A very simple (yet powerful) implicit animation library for Flutter.
+version: 1.0.0
+author: Vardiak
 homepage:
 
 environment:
