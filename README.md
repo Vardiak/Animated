@@ -7,20 +7,20 @@ Its goal is to be able to create a smooth animation between two values when an A
 ```dart
 @override
 Widget build(BuildContext context) {
-    return Animated(
-        value: 1.2,
-        curve: Curves.easeInOut,
-        duration: Duration(milliseconds: 300),
-        builder: (context, child, animation) => Transform.scale(
-            scale: animation.value,
-            child: child,
-        ),
-        child: Container(
-            width: 40,
-            height: 40,
-            color: Colors.red,
-        ),
-    )
+  return Animated(
+    value: 1.2,
+    curve: Curves.easeInOut,
+    duration: Duration(milliseconds: 300),
+    builder: (context, child, animation) => Transform.scale(
+      scale: animation.value,
+      child: child,
+    ),
+    child: Container(
+      width: 40,
+      height: 40,
+      color: Colors.red,
+    ),
+  );
 }
 ```
 
