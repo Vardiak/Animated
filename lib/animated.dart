@@ -6,14 +6,17 @@ class Animated extends StatefulWidget {
   final Duration duration;
   final Curve curve;
   final double value;
-  final Widget child;
-  final Widget Function(BuildContext context, Widget child, Animation animation)
-      builder;
+  final Widget? child;
+  final Widget Function(
+    BuildContext context,
+    Widget? child,
+    Animation animation,
+  ) builder;
 
   Animated({
-    Key key,
-    @required this.value,
-    @required this.builder,
+    Key? key,
+    required this.value,
+    required this.builder,
     this.duration = const Duration(milliseconds: 300),
     this.curve = Curves.easeInOut,
     this.child,
@@ -25,7 +28,7 @@ class Animated extends StatefulWidget {
 
 class _AnimatedState extends State<Animated>
     with SingleTickerProviderStateMixin {
-  AnimationController animation;
+  late AnimationController animation;
 
   @override
   void initState() {
