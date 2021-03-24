@@ -1,11 +1,11 @@
 name: animated
 description: A very simple (yet powerful) implicit animation library for Flutter.
-version: 1.0.1
+version: 2.0.0
 author: Vardiak <contact@vardiak.fr>
 homepage: https://github.com/Vardiak/Animated
 
 environment:
-  sdk: ">=2.1.0 <3.0.0"
+  sdk: '>=2.12.0 <3.0.0'
 
 dependencies:
   flutter:
