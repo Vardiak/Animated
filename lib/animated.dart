@@ -1,6 +1,6 @@
 library animated;
 
-import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 class Animated extends StatefulWidget {
   final Duration duration;
@@ -13,7 +13,7 @@ class Animated extends StatefulWidget {
     Animation animation,
   ) builder;
 
-  Animated({
+  const Animated({
     Key? key,
     required this.value,
     required this.builder,
